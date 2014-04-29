@@ -1,8 +1,8 @@
-'''
+"""
 Created on Apr 15, 2014
 
 @author: Joschka Rick
-'''
+"""
 
 import numpy as np
 
@@ -18,6 +18,7 @@ class OccupancyMap(object):
     def __init__(self, path="maps/map1.txt"):
         self.parse_txt(path)
         self.draw_map()
+        self.__map_matrix = np.matrix((0, 0))
         pass
 
     def get_start_pos(self):
@@ -43,12 +44,12 @@ class OccupancyMap(object):
         map_file = open(path, 'r')
 
         map_array = [list(
-                          line.replace('\n', '') \
-                          .replace(' ', str(MapState.CLEAN)) \
-                          .replace('|', str(MapState.BLOCKED)) \
-                          .replace('=', str(MapState.BLOCKED)) \
-                          .replace('*', str(MapState.DIRTY)) \
-                          .replace('s', str(MapState.START))
-                          ) for line in map_file]
+            line.replace('\n', '')
+            .replace(' ', str(MapState.CLEAN))
+            .replace('|', str(MapState.BLOCKED))
+            .replace('=', str(MapState.BLOCKED))
+            .replace('*', str(MapState.DIRTY))
+            .replace('s', str(MapState.START))
+        ) for line in map_file]
 
         self.__map_matrix = np.matrix(map_array, dtype=np.int)
