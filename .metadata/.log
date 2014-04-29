@@ -1,0 +1,3125 @@
+!SESSION 2014-04-15 09:02:40.051 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.python.pydev.shared_core 1 1 2014-04-15 09:03:24.697
+!MESSAGE Restoring info for: /usr/bin/python2.7
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /usr/bin/python2.7
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:517)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: Expecting: /home/joschka/air_ws/.metadata/.plugins/org.python.pydev/v1_3tswbhuj9gc4kibexhrzgzdx/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:280)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:371)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:515)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2014-04-15 09:03:24.701
+!MESSAGE - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.3</version>
+<executable>/usr/bin/python3.3</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python3.3</lib>
+<lib>/usr/lib/python3.3/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python3.3/lib-dynload</lib>
+<lib>/usr/local/lib/python3.3/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.3</version>
+<executable>/usr/bin/python3</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python3.3</lib>
+<lib>/usr/lib/python3.3/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python3.3/lib-dynload</lib>
+<lib>/usr/local/lib/python3.3/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.3</version>
+<executable>/usr/bin/python3.3</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python3.3</lib>
+<lib>/usr/lib/python3.3/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python3.3/lib-dynload</lib>
+<lib>/usr/local/lib/python3.3/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.3</version>
+<executable>/usr/bin/python3</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python3.3</lib>
+<lib>/usr/lib/python3.3/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python3.3/lib-dynload</lib>
+<lib>/usr/local/lib/python3.3/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/home/joschka/amr_ws/devel/lib/python2.7/dist-packages</lib>
+<lib>/opt/ros/hydro/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-i386-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages/PILcompat</lib>
+<lib>/usr/lib/python2.7/dist-packages/gtk-2.0</lib>
+<lib>/usr/lib/pymodules/python2.7</lib>
+<lib>/usr/lib/python2.7/dist-packages/ubuntu-sso-client</lib>
+<lib>/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSingleApply(AutoConfigMaker.java:177)
+	at org.python.pydev.ui.PyProjectPythonDetails$ProjectInterpreterAndGrammarConfig$2.widgetSelected(PyProjectPythonDetails.java:269)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1416)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1530)
+	at org.eclipse.swt.widgets.Link.gtk_button_release_event(Link.java:361)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2079)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5467)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4569)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8756)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1243)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2302)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3361)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.python.pydev.shared_core 1 1 2014-04-15 09:03:26.027
+!MESSAGE Finished restoring information for: /usr/bin/python2.7 at: /home/joschka/air_ws/.metadata/.plugins/org.python.pydev/v1_3tswbhuj9gc4kibexhrzgzdx
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /usr/bin/python2.7 at: /home/joschka/air_ws/.metadata/.plugins/org.python.pydev/v1_3tswbhuj9gc4kibexhrzgzdx
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:562)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 09:03:26.704
+!MESSAGE Info: Rebuilding internal caches: /home/joschka/air_ws/.metadata/.plugins/com.python.pydev.analysis/python_v1_3tswbhuj9gc4kibexhrzgzdx/python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 09:03:28.278
+!MESSAGE Info: Rebuilding internal caches: /home/joschka/air_ws/.metadata/.plugins/org.eclipse.core.resources/.projects/AIR_assignment_02/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 09:03:45.950
+!MESSAGE ERROR reading shell.
+ProcessInfo:
+
+ - Executed: /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pycompletionserver.py 53278
+
+ - Environment:
+CATKIN_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+CMAKE_PREFIX_PATH=/home/joschka/amr_ws/devel:/opt/ros/hydro
+COLORTERM=gnome-terminal
+CPATH=/home/joschka/amr_ws/devel/include:/opt/ros/hydro/include
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Zorm8RiL2D,guid=e7cbae1a490d35f02d65f8d7534cd8db
+DEFAULTS_PATH=/usr/share/gconf/xubuntu.default.path
+DESKTOP_SESSION=xubuntu
+DISPLAY=:0.0
+ECLIPSE_HOME=/opt/eclipse-kepler
+GDMSESSION=xubuntu
+GLADE_CATALOG_PATH=:/usr/share/glade3/catalogs
+GLADE_MODULE_PATH=:/usr/share/glade3/pixmaps
+GLADE_PIXMAP_PATH=:/usr/lib/glade3/modules
+GNOME_KEYRING_CONTROL=/run/user/joschka/keyring-60FMSC
+GNOME_KEYRING_PID=1671
+GPG_AGENT_INFO=/run/user/joschka/keyring-60FMSC/gpg:0:1
+HOME=/home/joschka
+LANG=en_US.UTF-8
+LC_ADDRESS=de_DE.UTF-8
+LC_IDENTIFICATION=de_DE.UTF-8
+LC_MEASUREMENT=de_DE.UTF-8
+LC_MONETARY=de_DE.UTF-8
+LC_NAME=de_DE.UTF-8
+LC_NUMERIC=de_DE.UTF-8
+LC_PAPER=de_DE.UTF-8
+LC_TELEPHONE=de_DE.UTF-8
+LC_TIME=de_DE.UTF-8
+LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:/home/joschka/amr_ws/devel/lib:/opt/ros/hydro/lib
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LESSOPEN=| /usr/bin/lesspipe %s
+LOGNAME=joschka
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+MANDATORY_PATH=/usr/share/gconf/xubuntu.mandatory.path
+ORBIT_SOCKETDIR=/tmp/orbit-joschka
+PATH=/home/joschka/amr_ws/devel/bin:/opt/ros/hydro/bin:/home/joschka/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PKG_CONFIG_PATH=/home/joschka/amr_ws/devel/lib/pkgconfig:/opt/ros/hydro/lib/pkgconfig
+PWD=/home/joschka/air_ws/assignment_02
+PYTHONPATH=/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pydev_sitecustomize:/home/joschka/amr_ws/devel/lib/python2.7/dist-packages:/opt/ros/hydro/lib/python2.7/dist-packages:/usr/lib/python2.7:/usr/lib/python2.7/plat-i386-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0:/usr/lib/pymodules/python2.7:/usr/lib/python2.7/dist-packages/ubuntu-sso-client:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode
+ROSLISP_PACKAGE_DIRECTORIES=/home/joschka/amr_ws/devel/share/common-lisp
+ROS_DISTRO=hydro
+ROS_ETC_DIR=/opt/ros/hydro/etc/ros
+ROS_MASTER_URI=http://localhost:11311
+ROS_PACKAGE_PATH=/home/joschka/amr_ws/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks
+ROS_ROOT=/opt/ros/hydro/share/ros
+ROS_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+SESSION_MANAGER=local/joschka-tp:@/tmp/.ICE-unix/1743,unix/joschka-tp:/tmp/.ICE-unix/1743
+SHELL=/bin/bash
+SHLVL=2
+SSH_AGENT_PID=1724
+SSH_AUTH_SOCK=/run/user/joschka/keyring-60FMSC/ssh
+TERM=xterm
+TERMINATOR_UUID=urn:uuid:c0f06b99-02fc-4010-84f7-3e5efc14f919
+TEXTDOMAIN=im-config
+TEXTDOMAINDIR=/usr/share/locale/
+USER=joschka
+WINDOWID=54525956
+XAUTHORITY=/home/joschka/.Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/usr/share/xubuntu:/usr/local/share/:/usr/share/:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/joschka
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_COOKIE=35c1977ced522a7fc1dd9cb6533d8a41-1397545179.425436-1082400323
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+_=/opt/eclipse-kepler/eclipse
+
+ - Working Dir:
+/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc
+
+ - OS:
+Linux
+
+ - Std output:
+
+
+ - Err output:
+[joschka-tp:02266] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 357
+[joschka-tp:02266] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 230
+[joschka-tp:02266] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../orte/runtime/orte_init.c at line 132
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  orte_ess_set_name failed
+  --> Returned value A system-required executable either could not be found or was not executable by this user (-127) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  ompi_mpi_init: orte_init failed
+  --> Returned "A system-required executable either could not be found or was not executable by this user" (-127) instead of "Success" (0)
+--------------------------------------------------------------------------
+*** The MPI_Init() function was called before MPI_INIT was invoked.
+*** This is disallowed by the MPI standard.
+*** Your MPI job will now abort.
+[joschka-tp:2266] Abort before MPI_INIT completed successfully; not able to guarantee that all other processes were killed!
+
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:371)
+	at java.lang.String.<init>(String.java:535)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:459)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:506)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:692)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getImportCompletions(AbstractShell.java:756)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:362)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:167)
+	at org.python.pydev.editor.codecompletion.revisited.modules.AbstractModule.createModule(AbstractModule.java:275)
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.getModule(ModulesManager.java:909)
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.getModule(ModulesManager.java:756)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:353)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:235)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:106)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManagerScheduler$SynchJob.run(SynchSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 09:15:39.320
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 09:15:39.320
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2af087,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@115323a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 09:19:10.818
+!MESSAGE Error analyzing: Tree (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (35, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx562.f$0(<string>:25)
+	at org.python.pycode._pyx562.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.ui 4 0 2014-04-15 09:19:54.948
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Argument not valid)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9734)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9830)
+	at org.eclipse.jface.text.TextPresentation.applyTextPresentation(TextPresentation.java:55)
+	at org.eclipse.jface.text.DefaultInformationControl.setInformation(DefaultInformationControl.java:342)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1183)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 09:28:36.078
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 09:28:36.078
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a4b57e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@877daf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14c6d75,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 10:07:49.866
+!MESSAGE Error analyzing: Main (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (27, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx2193.f$0(<string>:25)
+	at org.python.pycode._pyx2193.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 10:26:15.423
+!MESSAGE Error analyzing: Main (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (29, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx3074.f$0(<string>:25)
+	at org.python.pycode._pyx3074.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 11:16:54.935
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (69, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx4464.f$0(<string>:25)
+	at org.python.pycode._pyx4464.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 11:41:07.891
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (79, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx4855.f$0(<string>:25)
+	at org.python.pycode._pyx4855.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 11:52:10.093
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (81, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx5160.f$0(<string>:25)
+	at org.python.pycode._pyx5160.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 11:57:05.401
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (88, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx5395.f$0(<string>:25)
+	at org.python.pycode._pyx5395.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-04-15 12:48:00.137 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 12:49:18.728
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 12:49:18.728
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@131afcf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10d617f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 13:31:13.582
+!MESSAGE ERROR reading shell.
+ProcessInfo:
+
+ - Executed: /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pycompletionserver.py 40638
+
+ - Environment:
+CATKIN_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+CMAKE_PREFIX_PATH=/home/joschka/amr_ws/devel:/opt/ros/hydro
+COLORTERM=gnome-terminal
+CPATH=/home/joschka/amr_ws/devel/include:/opt/ros/hydro/include
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-fhS0jkYzuR,guid=9c14d167d7de6bac299d8229534d0e15
+DEFAULTS_PATH=/usr/share/gconf/xubuntu.default.path
+DESKTOP_SESSION=xubuntu
+DISPLAY=:0.0
+ECLIPSE_HOME=/opt/eclipse-kepler
+GDMSESSION=xubuntu
+GLADE_CATALOG_PATH=:/usr/share/glade3/catalogs
+GLADE_MODULE_PATH=:/usr/share/glade3/pixmaps
+GLADE_PIXMAP_PATH=:/usr/lib/glade3/modules
+GNOME_KEYRING_CONTROL=/run/user/joschka/keyring-ZTycNA
+GNOME_KEYRING_PID=1678
+GPG_AGENT_INFO=/run/user/joschka/keyring-ZTycNA/gpg:0:1
+HOME=/home/joschka
+LANG=en_US.UTF-8
+LC_ADDRESS=de_DE.UTF-8
+LC_IDENTIFICATION=de_DE.UTF-8
+LC_MEASUREMENT=de_DE.UTF-8
+LC_MONETARY=de_DE.UTF-8
+LC_NAME=de_DE.UTF-8
+LC_NUMERIC=de_DE.UTF-8
+LC_PAPER=de_DE.UTF-8
+LC_TELEPHONE=de_DE.UTF-8
+LC_TIME=de_DE.UTF-8
+LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:/home/joschka/amr_ws/devel/lib:/opt/ros/hydro/lib
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LESSOPEN=| /usr/bin/lesspipe %s
+LOGNAME=joschka
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+MANDATORY_PATH=/usr/share/gconf/xubuntu.mandatory.path
+ORBIT_SOCKETDIR=/tmp/orbit-joschka
+PATH=/home/joschka/amr_ws/devel/bin:/opt/ros/hydro/bin:/home/joschka/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PKG_CONFIG_PATH=/home/joschka/amr_ws/devel/lib/pkgconfig:/opt/ros/hydro/lib/pkgconfig
+PWD=/home/joschka
+PYTHONPATH=/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pydev_sitecustomize:/home/joschka/amr_ws/devel/lib/python2.7/dist-packages:/opt/ros/hydro/lib/python2.7/dist-packages:/usr/lib/python2.7:/usr/lib/python2.7/plat-i386-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0:/usr/lib/pymodules/python2.7:/usr/lib/python2.7/dist-packages/ubuntu-sso-client:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode
+ROSLISP_PACKAGE_DIRECTORIES=/home/joschka/amr_ws/devel/share/common-lisp
+ROS_DISTRO=hydro
+ROS_ETC_DIR=/opt/ros/hydro/etc/ros
+ROS_MASTER_URI=http://localhost:11311
+ROS_PACKAGE_PATH=/home/joschka/amr_ws/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks
+ROS_ROOT=/opt/ros/hydro/share/ros
+ROS_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+SESSION_MANAGER=local/joschka-tp:@/tmp/.ICE-unix/1750,unix/joschka-tp:/tmp/.ICE-unix/1750
+SHELL=/bin/bash
+SHLVL=2
+SSH_AGENT_PID=1731
+SSH_AUTH_SOCK=/run/user/joschka/keyring-ZTycNA/ssh
+TERM=xterm
+TERMINATOR_UUID=urn:uuid:e2e2a31f-1404-4e32-9398-cd17ddab4b36
+TEXTDOMAIN=im-config
+TEXTDOMAINDIR=/usr/share/locale/
+USER=joschka
+WINDOWID=54525956
+XAUTHORITY=/home/joschka/.Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/usr/share/xubuntu:/usr/local/share/:/usr/share/:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/joschka
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_COOKIE=35c1977ced522a7fc1dd9cb6533d8a41-1397558805.395249-369344975
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+_=/opt/eclipse-kepler/eclipse
+
+ - Working Dir:
+/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc
+
+ - OS:
+Linux
+
+ - Std output:
+pycompletionserver received error: Traceback (most recent call last):
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pycompletionserver.py", line 258, in run
+    received = self.socket.recv(BUFFER_SIZE)
+error: [Errno 104] Connection reset by peer
+
+
+
+ - Err output:
+
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:412)
+	at sun.nio.ch.SocketAdaptor$SocketInputStream.read(SocketAdaptor.java:223)
+	at sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.io.InputStream.read(InputStream.java:101)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:454)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:506)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:692)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getLineCol(AbstractShell.java:776)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.findDefinition(CompiledModule.java:594)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.findDefinition(CompiledModule.java:1)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:887)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:664)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:177)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:79)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:206)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:150)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 13:40:45.441
+!MESSAGE Unable to read contents from: /home/joschka/air_ws/.metadata/.plugins/org.python.pydev/v1_3tswbhuj9gc4kibexhrzgzdx/shell/__b_cutk4v7af1xg0o5696qq4c0md.top
+!STACK 0
+java.io.EOFException
+	at java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:264)
+	at java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:254)
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:163)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:78)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:90)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.getCached(CompiledModule.java:295)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:148)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:325)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:1)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.getModuleAndRelatedModulesManager(ProjectModulesManager.java:193)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.getModule(ProjectModulesManager.java:173)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getModule(AbstractASTManager.java:434)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1033)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:923)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:905)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:664)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:177)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:79)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:206)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:150)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+!SESSION 2014-04-15 15:05:28.962 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-04-15 15:05:32.373
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 15:12:39.273
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 15:12:39.274
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@121b368,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1898c18,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 15:15:39.410
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 15:15:39.411
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ce050,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1faaa8f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d3b319,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 15:35:12.905
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (55, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx352.f$0(<string>:25)
+	at org.python.pycode._pyx352.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 15:53:40.877
+!MESSAGE ERROR reading shell.
+ProcessInfo:
+
+ - Executed: /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pycompletionserver.py 53717
+
+ - Environment:
+CATKIN_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+CMAKE_PREFIX_PATH=/home/joschka/amr_ws/devel:/opt/ros/hydro
+COLORTERM=gnome-terminal
+CPATH=/home/joschka/amr_ws/devel/include:/opt/ros/hydro/include
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-mZhXrIzKeU,guid=53ec312dd46102ba80bbe253534d2d6b
+DEFAULTS_PATH=/usr/share/gconf/xubuntu.default.path
+DESKTOP_SESSION=xubuntu
+DISPLAY=:0.0
+ECLIPSE_HOME=/opt/eclipse-kepler
+GDMSESSION=xubuntu
+GLADE_CATALOG_PATH=:/usr/share/glade3/catalogs
+GLADE_MODULE_PATH=:/usr/share/glade3/pixmaps
+GLADE_PIXMAP_PATH=:/usr/lib/glade3/modules
+GNOME_KEYRING_CONTROL=/run/user/joschka/keyring-aMJp7y
+GNOME_KEYRING_PID=1685
+GPG_AGENT_INFO=/run/user/joschka/keyring-aMJp7y/gpg:0:1
+HOME=/home/joschka
+LANG=en_US.UTF-8
+LC_ADDRESS=de_DE.UTF-8
+LC_IDENTIFICATION=de_DE.UTF-8
+LC_MEASUREMENT=de_DE.UTF-8
+LC_MONETARY=de_DE.UTF-8
+LC_NAME=de_DE.UTF-8
+LC_NUMERIC=de_DE.UTF-8
+LC_PAPER=de_DE.UTF-8
+LC_TELEPHONE=de_DE.UTF-8
+LC_TIME=de_DE.UTF-8
+LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:/home/joschka/amr_ws/devel/lib:/opt/ros/hydro/lib
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LESSOPEN=| /usr/bin/lesspipe %s
+LOGNAME=joschka
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+MANDATORY_PATH=/usr/share/gconf/xubuntu.mandatory.path
+ORBIT_SOCKETDIR=/tmp/orbit-joschka
+PATH=/home/joschka/amr_ws/devel/bin:/opt/ros/hydro/bin:/home/joschka/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PKG_CONFIG_PATH=/home/joschka/amr_ws/devel/lib/pkgconfig:/opt/ros/hydro/lib/pkgconfig
+PWD=/home/joschka
+PYTHONPATH=/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pydev_sitecustomize:/home/joschka/amr_ws/devel/lib/python2.7/dist-packages:/opt/ros/hydro/lib/python2.7/dist-packages:/usr/lib/python2.7:/usr/lib/python2.7/plat-i386-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0:/usr/lib/pymodules/python2.7:/usr/lib/python2.7/dist-packages/ubuntu-sso-client:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode
+ROSLISP_PACKAGE_DIRECTORIES=/home/joschka/amr_ws/devel/share/common-lisp
+ROS_DISTRO=hydro
+ROS_ETC_DIR=/opt/ros/hydro/etc/ros
+ROS_MASTER_URI=http://localhost:11311
+ROS_PACKAGE_PATH=/home/joschka/amr_ws/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks
+ROS_ROOT=/opt/ros/hydro/share/ros
+ROS_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+SESSION_MANAGER=local/joschka-tp:@/tmp/.ICE-unix/1757,unix/joschka-tp:/tmp/.ICE-unix/1757
+SHELL=/bin/bash
+SHLVL=2
+SSH_AGENT_PID=1738
+SSH_AUTH_SOCK=/run/user/joschka/keyring-aMJp7y/ssh
+TERM=xterm
+TERMINATOR_UUID=urn:uuid:29a3961f-ebab-4e68-b1e7-63a73dfe7c64
+TEXTDOMAIN=im-config
+TEXTDOMAINDIR=/usr/share/locale/
+USER=joschka
+WINDOWID=54525956
+XAUTHORITY=/home/joschka/.Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/usr/share/xubuntu:/usr/local/share/:/usr/share/:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/joschka
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_COOKIE=35c1977ced522a7fc1dd9cb6533d8a41-1397566827.330899-1318008851
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+_=/opt/eclipse-kepler/eclipse
+
+ - Working Dir:
+/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc
+
+ - OS:
+Linux
+
+ - Std output:
+
+
+ - Err output:
+
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:496)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.write(AbstractShell.java:544)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:691)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getImportCompletions(AbstractShell.java:756)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createInnerFromServer(CompiledModule.java:331)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.getGlobalTokens(CompiledModule.java:529)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:715)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:493)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:723)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:974)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:923)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:905)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:664)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:177)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:79)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:206)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:150)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 15:54:04.510
+!MESSAGE Unable to read contents from: /home/joschka/air_ws/.metadata/.plugins/org.python.pydev/v1_3tswbhuj9gc4kibexhrzgzdx/shell/__b_bh7hwpl2cqe01awnaz8mtlj2v.top
+!STACK 0
+java.io.EOFException
+	at java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:264)
+	at java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:254)
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:163)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:78)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:90)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.getCached(CompiledModule.java:295)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:148)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:325)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:1)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.getModuleAndRelatedModulesManager(ProjectModulesManager.java:193)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.getModule(ProjectModulesManager.java:173)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getModule(AbstractASTManager.java:434)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1033)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:923)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:905)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:786)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:664)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:67)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getAssignCompletions(AbstractASTManager.java:802)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:776)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:493)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.addNonFunctionDefCompletionsFromAssign(AssignAnalysis.java:264)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:91)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getAssignCompletions(AbstractASTManager.java:802)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:776)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:493)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.addFunctionDefCompletionsFromReturn(AssignAnalysis.java:154)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:89)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getAssignCompletions(AbstractASTManager.java:802)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:776)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:493)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.findTokensOnImportedMods(AbstractASTManager.java:1146)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:679)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:541)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:510)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:502)
+	at org.python.pydev.editor.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:493)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.addNonFunctionDefCompletionsFromAssign(AssignAnalysis.java:264)
+	at org.python.pydev.editor.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:91)
+	at org.python.pydev.editor.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:699)
+	at org.python.pydev.editor.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:620)
+	at org.python.pydev.editor.codecompletion.PyCodeCompletion.doTokenCompletion(PyCodeCompletion.java:503)
+	at org.python.pydev.editor.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:254)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:223)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:159)
+	at org.python.pydev.editor.simpleassist.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:207)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1839)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:566)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:563)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:498)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:492)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:378)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+!SESSION 2014-04-15 19:07:44.611 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.jface 2 0 2014-04-15 19:08:47.588
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-15 19:08:47.588
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@146425a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ae55a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 19:22:30.381
+!MESSAGE Error analyzing: Graph (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (56, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx438.f$0(<string>:25)
+	at org.python.pycode._pyx438.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-15 19:42:44.842
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (187, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx1048.f$0(<string>:25)
+	at org.python.pycode._pyx1048.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-04-16 09:17:42.851 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.jface 2 0 2014-04-16 09:18:01.496
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-16 09:18:01.496
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@112cc5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19268bb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-16 09:19:36.350
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (168, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx58.f$0(<string>:25)
+	at org.python.pycode._pyx58.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-04-16 11:03:42.566 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.jface 2 0 2014-04-16 11:06:26.016
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-16 11:06:26.016
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7af2b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d5667f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2014-04-16 11:20:26.413 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-04-16 11:20:35.187
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2014-04-16 11:40:33.766
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-16 11:40:33.766
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f5aa78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8abc29,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2014-04-16 11:45:42.180
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Argument not valid)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4378)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9736)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:9830)
+	at org.eclipse.jface.text.TextPresentation.applyTextPresentation(TextPresentation.java:55)
+	at org.eclipse.jface.text.DefaultInformationControl.setInformation(DefaultInformationControl.java:342)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1183)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+!SESSION 2014-04-22 09:00:48.377 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.jface 2 0 2014-04-22 09:09:50.422
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-22 09:09:50.423
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73dd5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b0678,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:15:51.138
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (66, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx178.f$0(<string>:25)
+	at org.python.pycode._pyx178.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:19:52.433
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (67, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx278.f$0(<string>:25)
+	at org.python.pycode._pyx278.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:20:19.854
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (68, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx314.f$0(<string>:25)
+	at org.python.pycode._pyx314.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:20:40.003
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (68, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx332.f$0(<string>:25)
+	at org.python.pycode._pyx332.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:31:35.624
+!MESSAGE Error analyzing: Map (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (71, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx752.f$0(<string>:25)
+	at org.python.pycode._pyx752.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 09:44:52.618
+!MESSAGE org.python.pydev.parser.jython.ast.ClassDef cannot be cast to org.python.pydev.parser.jython.ast.FunctionDef
+!STACK 0
+java.lang.ClassCastException: org.python.pydev.parser.jython.ast.ClassDef cannot be cast to org.python.pydev.parser.jython.ast.FunctionDef
+	at com.python.pydev.refactoring.wizards.rename.PyRenameParameterProcess.init(PyRenameParameterProcess.java:115)
+	at com.python.pydev.refactoring.wizards.rename.PyRenameParameterProcess.<init>(PyRenameParameterProcess.java:76)
+	at com.python.pydev.refactoring.wizards.RefactorProcessFactory.getProcess(RefactorProcessFactory.java:87)
+	at com.python.pydev.refactoring.wizards.rename.PyRenameEntryPoint.checkInitialConditions(PyRenameEntryPoint.java:248)
+	at com.python.pydev.refactoring.markoccurrences.MarkOccurrencesJob.createRequest(MarkOccurrencesJob.java:102)
+	at org.python.pydev.shared_ui.mark_occurrences.BaseMarkOccurrencesJob.run(BaseMarkOccurrencesJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 10:32:50.516
+!MESSAGE Error analyzing: CleaningRobot (SourceModule)
+!STACK 0
+Traceback (innermost last):
+  File "<string>", line 25, in ?
+  File "/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py", line 957, in check_all
+  File "/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py", line 219, in generate_tokens
+TokenError: ('EOF in multi-line statement', (184, 0))
+
+	at org.python.core.Py.makeException(Py.java:1138)
+	at tokenize$py.generate_tokens$9(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py:219)
+	at tokenize$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev.jython_3.4.1.201403181715/Lib/tokenize.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyGenerator.__iternext__(PyGenerator.java:38)
+	at pep8$py.check_all$37(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py:957)
+	at pep8$py.call_function(/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/third_party/pep8/pep8.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyTableCode.call(PyTableCode.java:394)
+	at org.python.core.PyTableCode.call(PyTableCode.java:310)
+	at org.python.core.PyFunction.__call__(PyFunction.java:191)
+	at org.python.core.PyMethod.__call__(PyMethod.java:94)
+	at org.python.core.PyObject.__call__(PyObject.java:472)
+	at org.python.core.PyObject.invoke(PyObject.java:2867)
+	at org.python.pycode._pyx1763.f$0(<string>:25)
+	at org.python.pycode._pyx1763.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:208)
+	at org.python.core.PyCode.call(PyCode.java:13)
+	at org.python.core.Py.runCode(Py.java:1179)
+	at org.python.core.Py.exec(Py.java:1202)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:134)
+	at org.python.pydev.builder.pep8.Pep8Visitor.getMessages(Pep8Visitor.java:130)
+	at com.python.pydev.analysis.OccurrencesAnalyzer.analyzeDocument(OccurrencesAnalyzer.java:69)
+	at com.python.pydev.analysis.builder.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:234)
+	at com.python.pydev.analysis.builder.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:152)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 10:38:19.115
+!MESSAGE /opt/ros/hydro/lib/python2.7/dist-packages/diagnostic_analysis.dpkg-new
+!STACK 0
+java.nio.file.AccessDeniedException: /opt/ros/hydro/lib/python2.7/dist-packages/diagnostic_analysis.dpkg-new
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:426)
+	at java.nio.file.Files.newDirectoryStream(Files.java:411)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:849)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable.run(EventsStackerRunnable.java:217)
+	at org.python.pydev.shared_core.path_watch.PathWatch$PollThread.run(PathWatch.java:193)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-22 10:38:19.217
+!MESSAGE /opt/ros/hydro/lib/python2.7/dist-packages/diagnostic_updater.dpkg-new
+!STACK 0
+java.nio.file.AccessDeniedException: /opt/ros/hydro/lib/python2.7/dist-packages/diagnostic_updater.dpkg-new
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:426)
+	at java.nio.file.Files.newDirectoryStream(Files.java:411)
+	at org.python.pydev.shared_core.io.FileUtils.getLastModifiedTimeFromDir(FileUtils.java:849)
+	at org.python.pydev.shared_core.path_watch.EventsStackerRunnable.run(EventsStackerRunnable.java:217)
+	at org.python.pydev.shared_core.path_watch.PathWatch$PollThread.run(PathWatch.java:193)
+!SESSION 2014-04-28 16:26:20.106 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-04-28 16:29:44.986
+!MESSAGE ERROR reading shell.
+ProcessInfo:
+
+ - Executed: /usr/bin/python2.7 -u /opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pycompletionserver.py 34810
+
+ - Environment:
+CATKIN_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+CMAKE_PREFIX_PATH=/home/joschka/amr_ws/devel:/opt/ros/hydro
+COLORTERM=gnome-terminal
+CPATH=/home/joschka/amr_ws/devel/include:/opt/ros/hydro/include
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-A0zNUx9jk3,guid=4d6aa3180f641cf328944fdb535e64f9
+DEFAULTS_PATH=/usr/share/gconf/xubuntu.default.path
+DESKTOP_SESSION=xubuntu
+DISPLAY=:0.0
+ECLIPSE_HOME=/opt/eclipse-kepler
+GDMSESSION=xubuntu
+GLADE_CATALOG_PATH=:/usr/share/glade3/catalogs
+GLADE_MODULE_PATH=:/usr/share/glade3/pixmaps
+GLADE_PIXMAP_PATH=:/usr/lib/glade3/modules
+GNOME_KEYRING_CONTROL=/run/user/joschka/keyring-OZQxA0
+GNOME_KEYRING_PID=1645
+GPG_AGENT_INFO=/run/user/joschka/keyring-OZQxA0/gpg:0:1
+HOME=/home/joschka
+LANG=en_US.UTF-8
+LC_ADDRESS=de_DE.UTF-8
+LC_IDENTIFICATION=de_DE.UTF-8
+LC_MEASUREMENT=de_DE.UTF-8
+LC_MONETARY=de_DE.UTF-8
+LC_NAME=de_DE.UTF-8
+LC_NUMERIC=de_DE.UTF-8
+LC_PAPER=de_DE.UTF-8
+LC_TELEPHONE=de_DE.UTF-8
+LC_TIME=de_DE.UTF-8
+LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386:/home/joschka/amr_ws/devel/lib:/opt/ros/hydro/lib
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LESSOPEN=| /usr/bin/lesspipe %s
+LOGNAME=joschka
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+MANDATORY_PATH=/usr/share/gconf/xubuntu.mandatory.path
+ORBIT_SOCKETDIR=/tmp/orbit-joschka
+PATH=/home/joschka/amr_ws/devel/bin:/opt/ros/hydro/bin:/home/joschka/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PKG_CONFIG_PATH=/home/joschka/amr_ws/devel/lib/pkgconfig:/opt/ros/hydro/lib/pkgconfig
+PWD=/home/joschka
+PYTHONPATH=/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc/pydev_sitecustomize:/home/joschka/amr_ws/devel/lib/python2.7/dist-packages:/opt/ros/hydro/lib/python2.7/dist-packages:/usr/lib/python2.7:/usr/lib/python2.7/plat-i386-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0:/usr/lib/pymodules/python2.7:/usr/lib/python2.7/dist-packages/ubuntu-sso-client:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode:/home/joschka/.local/lib/python2.7/site-packages
+ROSLISP_PACKAGE_DIRECTORIES=/home/joschka/amr_ws/devel/share/common-lisp
+ROS_DISTRO=hydro
+ROS_ETC_DIR=/opt/ros/hydro/etc/ros
+ROS_MASTER_URI=http://localhost:11311
+ROS_PACKAGE_PATH=/home/joschka/amr_ws/src:/opt/ros/hydro/share:/opt/ros/hydro/stacks
+ROS_ROOT=/opt/ros/hydro/share/ros
+ROS_TEST_RESULTS_DIR=/home/joschka/amr_ws/build/test_results
+SESSION_MANAGER=local/joschka-tp:@/tmp/.ICE-unix/1717,unix/joschka-tp:/tmp/.ICE-unix/1717
+SHELL=/bin/bash
+SHLVL=2
+SSH_AGENT_PID=1698
+SSH_AUTH_SOCK=/run/user/joschka/keyring-OZQxA0/ssh
+TERM=xterm
+TERMINATOR_UUID=urn:uuid:40d204db-06a1-42e8-9402-b749ec1b4bad
+TEXTDOMAIN=im-config
+TEXTDOMAINDIR=/usr/share/locale/
+USER=joschka
+WINDOWID=54525956
+XAUTHORITY=/home/joschka/.Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/usr/share/xubuntu:/usr/local/share/:/usr/share/:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/joschka
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_COOKIE=35c1977ced522a7fc1dd9cb6533d8a41-1398695161.755815-1472540338
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+_=/opt/eclipse-kepler/eclipse
+
+ - Working Dir:
+/opt/eclipse-kepler/plugins/org.python.pydev_3.4.1.201403181715/pysrc
+
+ - OS:
+Linux
+
+ - Std output:
+
+
+ - Err output:
+[joschka-tp:02092] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 357
+[joschka-tp:02092] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 230
+[joschka-tp:02092] [[INVALID],INVALID] ORTE_ERROR_LOG: A system-required executable either could not be found or was not executable by this user in file ../../../orte/runtime/orte_init.c at line 132
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  orte_ess_set_name failed
+  --> Returned value A system-required executable either could not be found or was not executable by this user (-127) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  ompi_mpi_init: orte_init failed
+  --> Returned "A system-required executable either could not be found or was not executable by this user" (-127) instead of "Success" (0)
+--------------------------------------------------------------------------
+*** The MPI_Init() function was called before MPI_INIT was invoked.
+*** This is disallowed by the MPI standard.
+*** Your MPI job will now abort.
+[joschka-tp:2092] Abort before MPI_INIT completed successfully; not able to guarantee that all other processes were killed!
+
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.checkBounds(String.java:371)
+	at java.lang.String.<init>(String.java:535)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:459)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.read(AbstractShell.java:506)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:692)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getImportCompletions(AbstractShell.java:756)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:362)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:167)
+	at org.python.pydev.editor.codecompletion.revisited.modules.AbstractModule.createModule(AbstractModule.java:275)
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.getModule(ModulesManager.java:909)
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.getModule(ModulesManager.java:756)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:353)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:235)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:106)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManagerScheduler$SynchJob.run(SynchSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

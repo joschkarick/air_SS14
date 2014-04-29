@@ -1,0 +1,43 @@
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+import numpy as np
+
+
+def enum(**enums):
+    return type('Enum', (), enums)
+
+MapState = enum(CLEAN=0, BLOCKED=1, DIRTY=2, START=3)
+
+
+class OccupancyMap(object):
+
+    def __init__(self, map_matrix=None):
+        self.__occupancy_map = map_matrix
+        pass
+    
+    def get_start_pos(self):
+        print np.argwhere(self.__occupancy_map == 3)
+        return tuple(np.argwhere(self.__occupancy_map == 3)[0])
+    
+    def set_tile(self, tuple, value):
+        self.__occupancy_map[tuple] = value
+    
+    def get_tile(self, tuple):
+        return self.__occupancy_map[tuple]
+
+    def parse_txt(self, path):
+        map_file = open(path, 'r')
+
+        map_array = [line.replace('\n', '') \
+                     .replace(' ', str(MapState.CLEAN)) \
+                     .replace('|', str(MapState.BLOCKED)) \
+                     .replace('=', str(MapState.BLOCKED)) \
+                     .replace('*', str(MapState.DIRTY)) \
+                     .replace('s', str(MapState.START)) for line in map_file]
+        map_array = [line for line in map_file]
+
+        return np.matrix([list(line) for line in map_array], dtype=np.int)

@@ -1,0 +1,183 @@
+#!/usr/bin/env python
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+
+from Map import MapState
+from Graph import Node
+from Map import OccupancyMap
+import numpy as np
+
+
+def enum(**enums):
+    return type('Enum', (), enums)
+
+SearchAlgorithm = enum(DFS=0, BFS=1, UNIFORM=2)
+
+
+class Robot(object):
+
+    def __init__(self, map_path="maps/map1.txt",
+                 search_algorithm=SearchAlgorithm.DFS):
+        self.__occupancy_map = OccupancyMap(map_path)
+        self.__search_algorithm = search_algorithm
+        self.__start_pos = self.__occupancy_map.get_start_pos()
+        pass
+
+    def set_search_algorithm(self, search_algorithm=SearchAlgorithm.DFS):
+        self.__search_algorithm = search_algorithm
+        pass
+
+    def set_map(self, occupancy_map):
+        self.__occupancy_map = occupancy_map
+
+    def start_cleaning(self):
+        if self.__search_algorithm == SearchAlgorithm.DFS:
+            print "Starting a DFS search..."
+            dirty_tiles = self.__perform_dfs()
+        elif self.__search_algorithm == SearchAlgorithm.BFS:
+            print "Starting a BFS search..."
+            dirty_tiles = self.__perform_algorithm()
+        else:
+            print "Starting a uniform cost search..."
+            dirty_tiles = self.__perform_algorithm()
+
+        print "... found dirty tiles at:", dirty_tiles
+        pass
+
+    def __clean_tile(self, node):
+        self.__occupancy_map.set_tile(tuple(node.indizes), MapState.CLEAN)
+        node.dirty = False
+        pass
+
+    def __expand(self, node):
+        directions = np.array([[-1, 0], [1, 0], [0, -1], [0, 1]])
+
+        new_nodes = []
+        for direction in directions:
+            new_indizes = tuple(node.indizes + direction)
+            if self.__occupancy_map.get_tile(new_indizes) != MapState.BLOCKED:
+                new_node = Node(new_indizes,
+                                self.__occupancy_map.get_tile(new_indizes),
+                                [node])
+                new_nodes.append(new_node)
+                pass
+            pass
+        return new_nodes
+        pass
+
+    def __perform_algorithm(self):
+        # Discovered nodes
+        discovered = []
+
+        # Found dirty nodes
+        dirty_tiles = []
+
+        # The start node
+        start_node = Node(self.__start_pos,
+                          self.__occupancy_map.get_tile(self.__start_pos),
+                          [])
+
+        # Start with the start_node
+        queue = [start_node]
+
+        # While the queue is not empty there is undiscovered space
+        while queue:
+
+            # Get the next node to expand
+            if (self.__search_algorithm == SearchAlgorithm.BFS
+                or self.__search_algorithm == SearchAlgorithm.UNIFORM):
+                current_node = queue.pop(0)
+            elif self.__search_algorithm == SearchAlgorithm.DFS:
+                current_node = queue.pop()
+
+            # If the node is dirty, save and clean it
+            if (self.__occupancy_map.get_tile(current_node.indizes)
+                == MapState.DIRTY):
+                dirty_tiles.append(current_node)
+                self.__clean_tile(current_node)
+
+            # If the node wasn't already discovered, expand it
+            if current_node not in discovered:
+                discovered.append(current_node)
+                if (self.__occupancy_map.get_tile(current_node.indizes)
+                    != MapState.DIRTY):
+
+                    self.__occupancy_map.set_tile(current_node.indizes,
+                                                  MapState.VISITED)
+                self.__occupancy_map.draw_map()
+                new_nodes = self.__expand(current_node)
+
+                # If nodes were created with the expansion, enqueue them
+                if new_nodes:
+
+                    # BFS appends all expanded nodes to the queue
+                    if (self.__search_algorithm == SearchAlgorithm.BFS
+                        or self.__search_algorithm == SearchAlgorithm.DFS):
+                        queue += new_nodes
+
+                    # Uniform Search checks if the node already exists.
+                    # If it has lower costs, replace the costs
+                    elif self.__search_algorithm == SearchAlgorithm.UNIFORM:
+
+                        for new_node in new_nodes:
+
+                            if not new_node in queue:
+                                queue.append(new_node)
+
+                            else:
+                                # Calculate the new costs
+                                new_node.costs = current_node.costs + 1
+                                for node in queue:
+                                    if new_node.costs < node.costs:
+                                        node.costs = new_node.costs
+
+        return dirty_tiles
+        pass
+
+    def __perform_dfs(self):
+        # Discovered nodes
+        discovered = []
+
+        # Found dirty nodes
+        dirty_tiles = []
+
+        # The start node
+        start_node = Node(self.__start_pos,
+                          self.__occupancy_map.get_tile(self.__start_pos),
+                          [])
+
+        # Start with the start_node
+        queue = [start_node]
+
+        # While the queue is not empty there is undiscovered space
+        while queue:
+
+            # Get the newest node
+            current_node = queue.pop()
+            # If the node is dirty, save and clean it
+            if (self.__occupancy_map.get_tile(current_node.indizes)
+                == MapState.DIRTY):
+                dirty_tiles.append(current_node)
+                self.__clean_tile(current_node)
+
+            # If the node wasn't already discovered, expand it
+            if current_node not in discovered:
+                discovered.append(current_node)
+                if (self.__occupancy_map.get_tile(current_node.indizes)
+                    != MapState.DIRTY):
+                    self.__occupancy_map.set_tile(current_node.indizes,
+                                                  MapState.VISITED)
+                self.__occupancy_map.draw_map()
+                new_nodes = self.__expand(current_node)
+
+                # If nodes were created with the expansion, enqueue them
+                if new_nodes:
+                    queue += new_nodes
+
+        return dirty_tiles
+        pass
+    pass

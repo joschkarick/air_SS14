@@ -1,0 +1,54 @@
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+import numpy as np
+
+
+def enum(**enums):
+    return type('Enum', (), enums)
+
+MapState = enum(CLEAN=0, BLOCKED=1, DIRTY=2, START=3, VISITED=4)
+
+
+class OccupancyMap(object):
+
+    def __init__(self, path="maps/map1.txt"):
+        self.parse_txt(path)
+        self.draw_map()
+        pass
+
+    def get_start_pos(self):
+        return tuple(np.argwhere(self.__map_matrix == 3)[0][0])
+
+    def set_tile(self, index, value):
+        self.__map_matrix[index] = value
+
+    def get_tile(self, index):
+        return self.__map_matrix[index]
+
+    def draw_map(self):
+        np.set_printoptions(threshold=np.NAN, linewidth=500, )
+        print ('\n'.join(''.join(str(cell) for cell in row)
+                         for row in self.__map_matrix)) \
+            .replace(' ', '') \
+            .replace('[', '') \
+            .replace(']', '') \
+            .replace('0', ' ') \
+            .replace('4', '.')
+
+    def parse_txt(self, path):
+        map_file = open(path, 'r')
+
+        map_array = [list(
+                          line.replace('\n', '') \
+                          .replace(' ', str(MapState.CLEAN)) \
+                          .replace('|', str(MapState.BLOCKED)) \
+                          .replace('=', str(MapState.BLOCKED)) \
+                          .replace('*', str(MapState.DIRTY)) \
+                          .replace('s', str(MapState.START))
+                          ) for line in map_file]
+
+        self.__map_matrix = np.matrix(map_array, dtype=np.int)

@@ -1,0 +1,5 @@
+MODULES_MANAGER_V2
+CleaningRobot|/home/joschka/air_ws/AIR_assignment_02/CleaningRobot.py
+Graph|/home/joschka/air_ws/AIR_assignment_02/Graph.py
+Main|/home/joschka/air_ws/AIR_assignment_02/Main.py
+Map|/home/joschka/air_ws/AIR_assignment_02/Map.py

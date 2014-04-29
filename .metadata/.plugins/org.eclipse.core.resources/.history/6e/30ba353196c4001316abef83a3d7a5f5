@@ -1,0 +1,29 @@
+#!/usr/bin/env
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+from CleaningRobot import Robot, SearchAlgorithm
+from Map import OccupancyMap
+import timeit
+
+
+occupancy_map1 = OccupancyMap()
+occupancy_map2 = OccupancyMap()
+occupancy_map3 = OccupancyMap()
+occupancy_map1.parse_txt("maps/map1.txt")
+occupancy_map2.parse_txt("maps/map2.txt")
+occupancy_map3.parse_txt("maps/map3.txt")
+
+cr1 = Robot(occupancy_map1, SearchAlgorithm.BFS)
+timeit.timeit('cr1.start_cleaning()', 'from CleaningRobot import Robot, SearchAlgorithm; \
+from Map import OccupancyMap; \
+occupancy_map1 = OccupancyMap(); \
+occupancy_map1.parse_txt("maps/maps1.txt"); \
+cr1 = Robot(occupancy_map1, SearchAlgorithm.DFS')
+cr2 = Robot(occupancy_map1, SearchAlgorithm.DFS)
+cr2.start_cleaning()
+
+#np.set_printoptions(threshold=np.nan)

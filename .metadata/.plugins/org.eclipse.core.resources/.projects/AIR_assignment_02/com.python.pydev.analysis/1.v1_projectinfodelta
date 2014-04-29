@@ -1,0 +1,15 @@
+INSTUPMap
+/home/joschka/air_ws/AIR_assignment_02/Map.py
+INFOS:&&2|1|2|0&&3|3|2|0&&1|4|2|0&&2|5|2|4&&2|6|2|4&&2|7|2|4&&2|8|2|4&&2|9|2|4&&2|10|2|4&&3|11|2|12
+set_tile=7
+__init__=5
+OccupancyMap=4
+OccupancyMap.parse_txt=12
+Map=2
+get_start_pos=6
+MapState=3
+enum=1
+draw_map=9
+__map_matrix=11
+get_tile=8
+parse_txt=10

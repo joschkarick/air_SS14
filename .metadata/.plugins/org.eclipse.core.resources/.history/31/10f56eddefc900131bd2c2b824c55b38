@@ -1,0 +1,38 @@
+#!/usr/bin/env
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+from CleaningRobot import Robot, SearchAlgorithm
+from Map import OccupancyMap
+import timeit
+
+# Create map instances
+occupancy_map1 = OccupancyMap("maps/map1.txt")
+occupancy_map2 = OccupancyMap("maps/map2.txt")
+occupancy_map3 = OccupancyMap("maps/map2.txt")
+
+# Fill maps with txt file maps
+
+occupancy_map1.parse_txt("maps/map1.txt")
+occupancy_map1.draw_map()
+occupancy_map2.parse_txt("maps/map2.txt")
+occupancy_map2.draw_map()
+occupancy_map3.parse_txt("maps/map3.txt")
+occupancy_map3.draw_map()
+
+# Create a robot with the first map and UNIFORM search algorithm
+cr1 = Robot(occupancy_map1, SearchAlgorithm.UNIFORM)
+cr1.start_cleaning()
+
+# Calculate 10 complete cleanings and print the average time
+#print timeit.timeit('cr1.start_cleaning(); cr1.set_map(occupancy_map1)', 'from __main__ import cr1, occupancy_map1', number=10)
+
+cr2 = Robot(occupancy_map1, SearchAlgorithm.DFS)
+cr2.start_cleaning()
+
+print "Finished."
+
+#np.set_printoptions(threshold=np.nan)

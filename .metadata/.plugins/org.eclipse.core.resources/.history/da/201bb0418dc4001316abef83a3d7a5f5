@@ -1,0 +1,21 @@
+#!/usr/bin/env
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+from CleaningRobot import Robot, SearchAlgorithm, MapState
+from Map import OccupancyMap
+
+
+occupancy_map = OccupancyMap()
+occupancy_map.parse_txt("maps/map1.txt")
+
+print occupancy_map
+
+cr1 = Robot(occupancy_map, SearchAlgorithm.BFS)
+cr2 = Robot(occupancy_map, SearchAlgorithm.DFS)
+cr2.start_cleaning()
+
+#np.set_printoptions(threshold=np.nan)

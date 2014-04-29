@@ -1,0 +1,57 @@
+-- VERSION_4
+-- START DISKCACHE
+/home/joschka/air_ws/.metadata/.plugins/org.eclipse.core.resources/.projects/AIR_assignment_02/com.python.pydev.analysis/v2_indexcache
+Main|1398155754000|/home/joschka/air_ws/AIR_assignment_02/Main.py
+CleaningRobot|1398156362000|/home/joschka/air_ws/AIR_assignment_02/CleaningRobot.py
+Map|1398274517000|/home/joschka/air_ws/AIR_assignment_02/Map.py
+Graph|1397582588000|/home/joschka/air_ws/AIR_assignment_02/Graph.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+9=Robot.set_map
+1=Main
+7=OccupancyMap
+5=Robot
+8=OccupancyMap.parse_txt
+3=CleaningRobot
+6=Node
+2=Map
+4=Graph
+10=Robot.__init__
+13=Node.__init__
+12=Graph.__init__
+11=Robot.set_search_algorithm
+-- END DICTIONARY
+-- START TREE 1
+9
+cr1|1|cr1!11@
+cr2|1|cr2!11@
+enu|2|enum!18@enum!26@
+gra|1|Graph!33@
+map|1|MapState!19@
+nod|1|Node!33@
+occ|1|OccupancyMap!17@
+rob|1|Robot!25@
+sea|1|SearchAlgorithm!27@
+-- END TREE
+-- START TREE 2
+18
+__c|2|__clean_tile!5&26@__cmp__!6&34@
+__e|1|__expand!5&26@
+__i|4|__init__!7&18@__init__!5&26@__init__!4&34@__init__!6&34@
+__m|1|__map_matrix!8&19@
+__o|2|__occupancy_map!9&27@__occupancy_map!10&27@
+__p|1|__perform_algorithm!5&26@
+__r|1|__repr__!6&34@
+__s|5|__str__!6&34@__search_algorithm!11&27@__search_algorithm!10&27@__start_pos!10&27@__start_node!12&35@
+add|1|add_neighbour!6&34@
+cos|1|costs!13&35@
+dra|1|draw_map!7&18@
+get|2|get_tile!7&18@get_start_pos!7&18@
+ind|1|indizes!13&35@
+map|1|map_state!13&35@
+nei|1|neighbours!13&35@
+par|1|parse_txt!7&18@
+set|3|set_tile!7&18@set_map!5&26@set_search_algorithm!5&26@
+sta|1|start_cleaning!5&26@
+-- END TREE

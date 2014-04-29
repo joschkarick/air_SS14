@@ -1,0 +1,100 @@
+#!/usr/bin/env python
+'''
+Created on Apr 15, 2014
+
+@author: Joschka Rick
+'''
+
+
+from Map import MapState, OccupancyMap
+import numpy as np
+
+
+def enum(**enums):
+    return type('Enum', (), enums)
+
+SearchAlgorithm = enum(DFS=0, BFS=1)
+
+
+class Robot(object):
+
+    def __init__(self, occupancy_map, search_algorithm=SearchAlgorithm.DFS):
+        self.__occupancy_map = occupancy_map
+        self.__search_algorithm = search_algorithm
+        self.__start_pos = self.__occupancy_map.get_start_pos()
+        pass
+
+    def print_queue(self):
+        return str(self.__queue)
+        pass
+
+    def set_search_algorithm(self, search_algorithm=SearchAlgorithm.DFS):
+        self.__search_algorithm = search_algorithm
+        pass
+
+    def start_cleaning(self):
+        if self.__search_algorithm == SearchAlgorithm.DFS:
+            print "Starting a DFS search..."
+            dirty_tiles = self.__perform_dfs()
+        else:
+            print "Starting a BFS search..."
+            dirty_tiles = self.__perform_bfs()
+
+        print "... found the following dirty tiles:", dirty_tiles
+        pass
+
+    def __clean_tile(self, node):
+        self.__occupancy_map.set_tile(tuple(node), MapState.CLEAN)
+        pass
+
+    def __expand(self, node):
+        directions = np.array([[-1, 0], [0, -1], [1, 0], [0, 1]])
+
+        new_nodes = []
+        for direction in directions:
+            new_index = tuple(node + direction)
+            if self.__occupancy_map.get_tile(new_index) != MapState.BLOCKED:
+                new_nodes.append(new_index)
+                pass
+            pass
+        return new_nodes
+        pass
+
+    def __perform_bfs(self):
+        discovered = []
+        dirty_tiles = []
+        queue = [self.__start_pos]
+        while queue:
+            current_node = queue.pop()
+            if self.__occupancy_map.get_tile(current_node) == MapState.DIRTY:
+                dirty_tiles.append(current_node)
+                self.__clean_tile(current_node)
+
+            if current_node not in discovered:
+                discovered.append(current_node)
+                new_nodes = self.__expand(current_node)
+                if new_nodes:
+                    queue += new_nodes
+
+        return dirty_tiles
+        pass
+
+    def __perform_dfs(self):
+        discovered = []
+        dirty_tiles = []
+        queue = [self.__start_pos]
+        while queue:
+            current_node = queue.pop()
+            if self.__occupancy_map.get_tile(current_node) == MapState.DIRTY:
+                dirty_tiles.append(current_node)
+                self.__clean_tile(current_node)
+
+            if current_node not in discovered:
+                discovered.append(current_node)
+                new_nodes = self.__expand(current_node)
+                if new_nodes:
+                    queue += new_nodes
+
+        return dirty_tiles
+        pass
+    pass
