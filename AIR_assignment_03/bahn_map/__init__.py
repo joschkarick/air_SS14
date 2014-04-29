@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 '''
-            print "unset dirty"
 Created on 28.04.2014
 
 @author: Joschka Rick

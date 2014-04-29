@@ -14,13 +14,19 @@ def enum(**enums):
 SearchAlgorithm = enum(A_STAR=0)
 
 
-def get_random_map():
+def get_random_map(number_of_stations=3000, width=1000, height=1000):
+    for i in xrange(number_of_stations):
+        station = Station()
+        pass
     pass
 
 
 class Map(object):
     
-    def __init__(self):
+    def __init__(self, width, height, stations=[]):
+        self.width = width
+        self.height = height
+        self.stations = stations
         pass
 
     def find_path(self, start_station, goal_station, algorithm=SearchAlgorithm.A_STAR):
