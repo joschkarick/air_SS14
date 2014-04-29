@@ -23,6 +23,16 @@ class Node(object):
         self.__total_cost = self.__path_cost + self.__heuristic_cost
         pass
 
+    def get_path(self):
+        if self.predecessor is None:
+            l = list()
+            l.append(self)
+            return l
+        else:
+            predecessor_path = self.predecessor.get_path()
+            predecessor_path.append(self)
+            return predecessor_path
+
     def get_total_cost(self):
         return self.__total_cost
 
