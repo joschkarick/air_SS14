@@ -84,7 +84,8 @@ def execute_a_star(start_station, goal_station):
             heuristic_costs = floor(current_node.station.distance_to(goal_station))
 
             # The edge costs are at least as high as the heuristic costs. Thus the heuristic function is admissible.
-            edge_costs = heuristic_costs + randint(1, int(heuristic_costs / 2))
+            edge_costs = floor(current_node.station.distance_to(neighbour))
+            edge_costs += randint(1, int(edge_costs / 2))
             node = Node(current_node,
                         neighbour,
                         # Add the edge costs to the precedessors path costs.
