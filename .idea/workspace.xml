@@ -24,22 +24,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
+        <entry file="file://$PROJECT_DIR$/AIR_assignment_04/knapsack/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding>
-                <element signature="e#53#76#0" expanded="true" />
-              </folding>
+            <state line="6" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bahn_grid.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
+      <file leaf-file-name="knapsack_solver.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AIR_assignment_04/knapsack/knapsack_solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="39" selection-start="607" selection-end="607" vertical-scroll-proportion="0.6080114" vertical-offset="0" max-vertical-offset="6188">
+            <state line="169" column="17" selection-start="4907" selection-end="4907" vertical-scroll-proportion="0.5622318" vertical-offset="2480" max-vertical-offset="3179">
               <folding>
-                <element signature="e#53#79#0" expanded="true" />
+                <element signature="e#48#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,6 +58,10 @@
         <option value="$PROJECT_DIR$/AIR_assignment_03/bahn_map/graph.py" />
         <option value="$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py" />
         <option value="$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py" />
+        <option value="$PROJECT_DIR$/AIR_assignment_04/knapsack/knapsack.py" />
+        <option value="$PROJECT_DIR$/AIR_assignment_04/knapsack/test.py" />
+        <option value="$PROJECT_DIR$/AIR_assignment_04/knapsack/__init__.py" />
+        <option value="$PROJECT_DIR$/AIR_assignment_04/knapsack/knapsack_solver.py" />
       </list>
     </option>
   </component>
@@ -111,6 +113,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="air_SS14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="air_ws" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="air_SS14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AIR_assignment_04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="knapsack" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,7 +197,12 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.__init__">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JOSCH\air_SS14" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.__init__ (1)">
     <configuration default="false" name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,6 +216,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="air_ws" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AIR_assignment_04/knapsack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="air_ws" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AIR_assignment_04/knapsack/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AIR_assignment_04/knapsack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="air_ws" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AIR_assignment_04/knapsack/test.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -317,12 +378,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="1" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +424,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22870371" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -369,6 +433,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22870371" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -392,91 +457,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
-          <folding>
-            <element signature="e#53#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
-          <folding>
-            <element signature="e#53#76#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="11" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
           <folding>
-            <element signature="e#53#79#0" expanded="true" />
+            <element signature="e#53#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="391">
+        <state line="17" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
           <folding>
-            <element signature="e#53#76#0" expanded="true" />
+            <element signature="e#53#79#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_02/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-762174762/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="641" column="8" selection-start="21636" selection-end="21636" vertical-scroll-proportion="0.33333334" vertical-offset="10664" max-vertical-offset="86683">
+        <state line="641" column="8" selection-start="21636" selection-end="21636" vertical-scroll-proportion="0.33333334" vertical-offset="10664" max-vertical-offset="86683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_02/Graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="356" selection-end="356" vertical-scroll-proportion="0.43776825" vertical-offset="0" max-vertical-offset="969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_04/knapsack/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1702432" vertical-offset="0" max-vertical-offset="699">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="23" selection-start="5035" selection-end="5036" vertical-scroll-proportion="-8.615385" vertical-offset="2326" max-vertical-offset="6120">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_02/CleaningRobot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="40" selection-start="2563" selection-end="2569" vertical-scroll-proportion="2.0915594" vertical-offset="0" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AIR_assignment_02/Graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="356" selection-end="356" vertical-scroll-proportion="0.43776825" vertical-offset="0" max-vertical-offset="969">
+        <state line="67" column="16" selection-start="2017" selection-end="2017" vertical-scroll-proportion="31.653847" vertical-offset="1911" max-vertical-offset="2584">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIR_assignment_02/Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+        <state line="34" column="55" selection-start="775" selection-end="775" vertical-scroll-proportion="0.5350501" vertical-offset="204" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/__init__.py">
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_04/knapsack/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding>
-            <element signature="e#53#76#0" expanded="true" />
-          </folding>
+        <state line="6" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AIR_assignment_03/bahn_map/bahn_grid.py">
+    <entry file="file://$PROJECT_DIR$/AIR_assignment_04/knapsack/knapsack_solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="39" selection-start="607" selection-end="607" vertical-scroll-proportion="0.6080114" vertical-offset="0" max-vertical-offset="6188">
+        <state line="169" column="17" selection-start="4907" selection-end="4907" vertical-scroll-proportion="0.5622318" vertical-offset="2480" max-vertical-offset="3179">
           <folding>
-            <element signature="e#53#79#0" expanded="true" />
+            <element signature="e#48#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
