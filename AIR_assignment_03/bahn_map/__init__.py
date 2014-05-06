@@ -13,5 +13,7 @@ station1.neighbours = [station2]
 station2.neighbours = [station1]
 
 m2 = get_random_map(number_of_stations=50, width=100, height=100)
-goal_station = m2.navigate((2, 2), (20, 20))
+goal_station = m2.navigate((2, 2), (90, 90))
+goal_station = m2.navigate((60, 20), (50, 50))
+goal_station = m2.navigate((22, 90), (90, 90))
 print print_path(goal_station)

@@ -3,8 +3,7 @@ Created on 28.04.2014
 
 @author: Joschka Rick
 """
-from _mysql import connect
-from operator import ne
+
 
 from random import randint
 from math import sqrt, floor
@@ -27,8 +26,8 @@ def get_random_map(number_of_stations=3000, width=1000, height=1000):
 
     # While there are less than `number_of_stations` stations, proceed.
     while m.get_station_count() < number_of_stations:
-        x = randint(0, width-1)
-        y = randint(0, height-1)
+        x = randint(0, width - 1)
+        y = randint(0, height - 1)
 
         # Only add the station if the position is free in the map.
         if m.is_free((x, y)):
@@ -39,7 +38,7 @@ def get_random_map(number_of_stations=3000, width=1000, height=1000):
     stations = m.get_stations()
     for station in stations:
         for i in xrange(10):
-            index = randint(0, len(stations)-1)
+            index = randint(0, len(stations) - 1)
 
             # Add the station to each other
             station.neighbours.append(stations[index])
@@ -84,11 +83,12 @@ def execute_a_star(start_station, goal_station):
             heuristic_costs = floor(current_node.station.distance_to(goal_station))
 
             # The edge costs are at least as high as the heuristic costs. Thus the heuristic function is admissible.
-            edge_costs = heuristic_costs + randint(1, int(heuristic_costs / 2))
+            edge_costs = floor(current_node.station.distance_to(neighbour))
+            edge_costs += randint(0, int(edge_costs / 2))
             node = Node(current_node,
                         neighbour,
                         # Add the edge costs to the precedessors path costs.
-                        path_cost=edge_costs+current_node.get_path_cost(),
+                        path_cost=edge_costs + current_node.get_path_cost(),
                         heuristic_cost=heuristic_costs)
 
             # If the neighbour was already processed, skip it.
